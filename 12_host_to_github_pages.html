@@ -1,0 +1,211 @@
+<!-- (Document type declaration) DOCTYPE html
+ Sebuah kode yang mengindifikasikan bahwa dokumen tersebut adalah halaman HTML,
+yang berfungsi memberitahukan peramban (browser) bahwa kode yang akan dijalankan adalah kode
+bahasa markup (Markup sendiri adalah bahasa pemograman) -->
+<!DOCTYPE html>
+
+<!-- (Hypertext Markup Language) html
+ Suatu bahasa yang dirancang untuk ditampilkan di peramban internet 
+yang di bantu oleh teknologi salah satu contohnya adalah Cascading style, visual code dll 
+ Sedangakan atribut (lang) 
+Adalah suatu atribuat untuk menyatakan bahasa halaman Web yang kita buat,
+yang bertujuan untuk membantu mesin telusur (search engine) 
+dan untuk mendefinisikan sigkatan-singkatan kode bahasa -->
+<html lang="en">
+
+<!-- (Head) 
+ Digunakan untuk menyediakan informasi meta tentang halaman web kepada browser
+atau juga head sendiri mengartikan kepala, yang mendefinisikan awalan dari suatu program -->
+<head>
+
+    <!-- (Metadata)
+     Elemen yang digunakan untuk memberikan informasi tambahan contohnya: 
+    (Meta charset="UTF-8")
+    Mendfinisikan character set atau karakter pengkodean --> 
+    <meta charset="UTF-8">
+
+    <!-- (Meta http-equiv)
+    Adalah tag HTML yang digunakan untuk memastikan bahwa halaman web ditampilkan dengan mesin rendering terbaru
+    yang tersedia pada internet Explorer (IE) --> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- (Meta name)
+    Mengatur Viewport agar website dapat menyesuaikan tampilan sesuai dengan perangkat -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     
+    <!-- (title)
+    Title tag adalah tag HTML yang berisi judul halaman web. 
+    Title tag digunakan oleh mesin pencari sebagai judul daftar pencarian
+    Fungsi title tag adalah sebagai backlink yang akan menghubungkan pengguna ke situs web -->
+    <title>Portofolio</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav style="background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);" class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand fs-4 fw-bold" href="#">Youkoso アウリヤ</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#work">Work</a>
+            </li>
+             <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+            </li>
+            </ul>
+        </div>
+        </div>
+    </nav><br>
+
+    <style>
+        body{
+            background: url();
+            align-items: center;
+            background: rgb(58,180,168);
+            background: linear-gradient(90deg, rgba(58,180,168,1) 0%, rgba(29,176,253,1) 50%, rgba(102,69,252,1) 100%);
+        }
+        fieldset{
+            width:200px;
+            height: 100px;
+            text-align: center;           
+            margin: auto;
+         }
+         .img {
+            margin-top: -160px;
+            margin-right: 20px;
+         }
+    </style>
+
+<fieldset>
+   <h3 style="font-family: fantasy;">Death Note</h3>
+    
+</fieldset>
+    
+
+    <section id="home" class="home container">
+        <div class="row d-flex align-items-center flex-md-row flex-column-reverse">
+        <div class="col-12 col-md-8">
+            <h3 class="fw-semibold">Hi! I am</h3>
+            <h1 class="fw-bold">Auliya</h1>
+            <p>I am Sofware Enggineer based in Indonesia</p>
+            <a class="btn button" href="potrait.png" download>Resume</a>
+        </div>
+        <div class="col-12 col-md-4 d-flex justify-content-md-end justify-content-center">
+            <img src="aul.jpg" alt="Auliya icon" style="height: 500px; border-radius: 700px;">
+        </div>
+        </div>
+            <a href="#about" class="text-decoration-none arrow w-100 d-flex align-items-center flex-column mt-5">
+                <div class="text-dark">More Info</div>
+                <img class="mt-2" src="arrow.svg" alt="arrow icon">
+            </a>
+    </section>
+    <section id="About" class="about container">
+        <p>Lorem ipsum dolor sit amet consectetur adipsicing elit. Et vero laboriosam debitis inventore excepturi dolor corporis ducimus numquam, vitae temporibus aetem nulla tenetur reprehenderit quasi soluta neque nemo? ad unde voluptatem corrupti rerum officiis eius similque perspiciatis dolorem ex. Expedita ad libero ut aliquid voluptate rem deleniti hic doloribus quasi!</p>
+        <div class="about-exp">
+        <div class="about-exp-item">
+        <div class="about-exp-item-header">
+        </div>
+            <h5>Software Enggineer</h5>
+            <p>Coding Studio (2021-Now</p>
+        </div>
+        <button class="btn button" onclick="toggleDetail(event)">More Info</button> 
+    </div>
+        <p class="about-exp-item-detail">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit quisquam, rerum nisi laborum labore est dolores nuque fuga esse commodi nam quia atque aut dolorum! Culpa reprehenderit quo valuptates laboriosam</p>
+    </div>
+    <div class="about-exp-item">
+    <div class="about-exp-item-header">
+    <div>
+        <h5>Software Engineer</h5>
+        <p>Coding studio (2021-Now)</p>
+    </div>
+        <button class="btn button" onclick="toggleDetail(event)">More Info</button> 
+    </div>
+        <p class="about-exp-item-detail">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit quisquam, rerum nisi laborum labore est dolores nuque fuga esse commodi nam quia atque aut dolorum! Culpa reprehenderit quo valuptates laboriosam</p>
+    </div>
+    <div class="about-exp-item">
+    <div class="about-exp-item-header">
+    <div>
+        <h5>Software Engineer</h5>
+        <p>Coding studio (2021-Now)</p>
+    </div>
+    <button class="btn button" onclick="toggleDetail(event)">More Info</button> 
+        <p class="about-exp-item-detail">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit quisquam, rerum nisi laborum labore est dolores nuque fuga esse commodi nam quia atque aut dolorum! Culpa reprehenderit quo valuptates laboriosam</p>
+    </div>
+    </div>
+</section>
+
+    <section id="Work" class="work container">
+        <div class="row d-flex align-items-center gap-5">
+        <div class="col">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ration at aspernatur, similque repellendus cum obcaecatibus, ullam odio minima iure minus inventero, nobis hic dolorum sed. Debitis valuptas quo, veniam repellat est odit assumenda, ea beatae facilis aliqum maxime ab magnam. Provident iste esse officiis deserunt laborum repellendus, architecto placeat?</p>
+        </div>
+        <div class="col work-img">
+            <div id="work-1" class="work-img-item">
+                <img src="work-1.png" alt="work-1">
+            </div>
+            <div id="work-2" class="work-img-item">
+                <img src="work-2.png" alt="work-2">
+            </div>
+            <div id="work-3" class="work-img-item">
+                <img src="work-3.png" alt="work-3">
+            </div>
+         </div>
+        </div>
+    </section>
+    <section id="Contact" class="Contact container">
+        <div class="row d-flex align-items-center gap-5">
+        <div class="col">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum aperiam saepe optio, fugit fuga laudantium, minus magnam deleniti cumque illo tempora tempora facilis aliqum dicta assumenda animi eligendi sunt. Cumque perferendis natus, consectetur accusantium, eius blanditiis quas, delectus atque cum commodi molestiae! Cupiditate quod vitae ab molestias! Impedit!</p>
+        <div class="row">
+        <div class="col d-flex align-items-center">
+            <img src="Facebook.svg" alt="Facebook icon">
+            <p>John Doe</p>
+        </div>
+        <div class="col d-flex align-items-center">
+            <img src="Instagram.svg" alt="Instagram icon">
+            <p>@john_doe</p>
+        </div>
+        <div class="col d-flex align-items-center">
+            <img src="Twitter.svg" alt="Twitter icon">
+            <p>@john_doe</p>
+        </div>
+        </div>
+        </div>
+        <div class="col">
+            <form class="Contact form">
+            <div class="mb-3">
+                <label for="inp_email" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="inp_email" placeholder="examle@email.com">
+            </div>
+            <div class="mb-3">
+                <label for="inp_email" class="form-label">Email address</label>
+                <input type="text" class="form-control" id="inp_subject" placeholder="Your Subject">
+            </div>
+            <div class="mb-3">
+                <label for="inp_email" class="form-label">Email address</label>
+                <input type="text" class="form-control" id="inp_message" placeholder="Your Message">
+            </div>
+            <div class="d-flex justify-content-center mt-5">
+                <button type="submit" class="btn button">Submit</button> 
+            </div><br>
+            </form>
+        </div>
+        </div>
+    </section>
+    <script src="bootstrap.min.js"></script>
+    <script src="popper.js"></script>
+    <script src="jquery.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
